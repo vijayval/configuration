@@ -32,6 +32,7 @@ jenkins_common_non_plugin_template_files:
   - git_config
   - github_config
   - github_oauth
+  - global_tool_config
   - hipchat_config
   - job_config_history
   - log_config
@@ -69,6 +70,12 @@ jenkins_common_system_properties:
 
 JENKINS_MAIN_URL: 'https://jenkins.example.org/'
 JENKINS_MAIN_ADMIN_EMAIL: 'jenkins <admin@example.org>'
+
+# global tool configuration
+jenkins_common_groovy_installations:
+    - NAME: 'DEFAULT_GROOVY'
+      HOME: ''
+      VERSION: '2.5.1'
 
 # plugins
 jenkins_common_plugins_list: []
